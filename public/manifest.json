@@ -1,6 +1,6 @@
 {
-  "short_name": "Sample Widget",
-  "name": "Sample Widget",
+  "short_name": "Queue Metrics Widget",
+  "name": "Queue Metrics Widget",
   "icons": [
   ],
   "start_url": ".",
