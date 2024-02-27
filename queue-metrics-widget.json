@@ -1,0 +1,23 @@
+{
+    "metadata": {
+        "name": "Queue Metrics Widget",
+        "description": "Queue Metrics Widget",
+        "tags": "queues, metrics, widget, sample, ws",
+        "library": "Queue Metrics Widget",
+        "version": "1.0.0",
+        "date": "2023-12-29T10:44:05.741Z",
+        "id": "814c2acf-de7b-4df2-8177-64a8252007fd"
+    },
+    "configuration": {
+        "external": true,
+        "timeout": 5000,
+        "serie": true,
+        "name": "814c2acf-de7b-4df2-8177-64a8252007fd",
+        "element": "<queue-metrics-widget></queue-metrics-widget>",
+        "icon": "aoc-home",
+        "files": [
+            "bundle.js"
+        ],
+        "overrideUrl":"https://localhost:8888/"
+    }
+  }
