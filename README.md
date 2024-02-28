@@ -21,7 +21,7 @@ The widget primarily uses the `AXP Admin & Routing APIs` and the `Workspaces Wid
 - `getInteractionData()`: Obtain details of the current interaction.
 - `getConfiguration().user`: Retrieve the full logged-in Agent configuration.
 
-### Admin APIs
+### Avaya Experience Platform APIs
 - [Authorization](https://developers.avayacloud.com/avaya-experience-platform/docs/how-to-authenticate-with-axp-apis#client-credentials-grant): Acquire an access token for API calls.
 - [Get Queue Metrics](https://developers.avayacloud.com/avaya-experience-platform/reference/getmetricsrequestpriorityattributesoptional): Fetch Metrics for a specific Queue.
 - [List Categories](https://developers.avayacloud.com/avaya-experience-platform/reference/listcategories): Retrieve Categories/Attributes for the tenant.
@@ -29,7 +29,7 @@ The widget primarily uses the `AXP Admin & Routing APIs` and the `Workspaces Wid
 
 ## Configuration & Installation
 
-The widget consists of the `bundle.js` file and a backend component for authorization and Admin API requests proxying. Both components are not multi-tenanted and require individual deployment per tenant.
+The widget consists of the `bundle.js` file and a backend component for authorization and AXP API requests proxying. Both components are not multi-tenanted and require individual deployment per tenant.
 
 Pre-requisites include AXP Client Credentials `(CLIENT_ID and CLIENT_SECRET)` and AXP API Application Key `(AXP_API_APP_KEY)`. Node.js `v18.0+` is also necessary.
 
@@ -53,7 +53,7 @@ export default {
 };
 ```
 - Run `yarn install` to install dependencies.
-- Run `npm run prod` to build the bundle.js file, it will be in the build/ folder.
+- Run `yarn build` to build the bundle.js file, it will be in the build/ folder.
 
 
 ## Dockerized Hosting
@@ -69,7 +69,7 @@ export default {
 2. Build and deploy the widget:
    ```sh
    yarn install
-   npm run build
+   yarn build
    docker-compose -f docker-compose-dev.yml up # add -d for background process
    ```
 3. To apply changes, run `npm run build` and refresh workspaces.
