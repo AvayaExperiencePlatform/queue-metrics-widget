@@ -13,7 +13,7 @@ This custom widget gives the ability to Agents to check the Metrics for a specif
 
 ## Technical Details
 
-The widget primarily uses the `AXP Public Admin APIs` and the `Workspaces Widget Framework SDK`.
+The widget primarily uses the `AXP Admin & Routing APIs` and the `Workspaces Widget Framework SDK`.
 
 ### Workspaces Widget Framework SDK
 - `onAgentStateEvent`: Subscribe to changes in Agent's state (logged in, ready, not ready, etc.).
